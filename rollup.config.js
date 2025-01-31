@@ -2,7 +2,8 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
-import pkg from "./package.json";
+import json from "@rollup/plugin-json";
+import pkg from "./package.json" assert { type: "json" };
 
 export default {
   input: "src/index.tsx",
@@ -23,5 +24,6 @@ export default {
     resolve(),
     commonjs(),
     typescript({ tsconfig: "./tsconfig.json" }),
+    json(),
   ],
 };
