@@ -1,2 +1,2 @@
 export { Table } from "./Table";
-export type { TableColumn } from "./type";
+export type { TableColumn, InitRecordType } from "./type";

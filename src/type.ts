@@ -15,11 +15,6 @@ export interface CoreTable {
   isFetching?: boolean;
 }
 
-export enum FilterType {
-  SEARCH = "search",
-  OPTIONS = "options",
-}
-
 /** Table Column */
 export interface TableColumn<RecordType extends InitRecordType> {
   /** set the className of the column */
