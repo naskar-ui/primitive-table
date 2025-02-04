@@ -17,8 +17,8 @@
   "license": "ISC",
   "type": "module",
   "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.2",
