@@ -8,8 +8,12 @@
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "table",
+    "react component",
+    "react table"
+  ],
+  "author": "Naskar UI",
   "license": "ISC",
   "type": "module",
   "peerDependencies": {
