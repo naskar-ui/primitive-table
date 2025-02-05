@@ -6,7 +6,8 @@
   "module": "dist/index.es.js",
   "scripts": {
     "build": "rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "./scripts/release.sh"
   },
   "keywords": [
     "table",
