@@ -5,11 +5,11 @@ NC='\033[0m' # No Color
 
 ORIGIN="git@github.com:naskar-ui/primitive-table.git"
 
-# # Check for changes to be committed
-# if [[ -n $(git status --porcelain) ]]; then
-#     echo "${RED}THERE ARE CHANGES TO BE COMMITTED.${NC}"
-#     exit 0
-# fi
+# Check for changes to be committed
+if [[ -n $(git status --porcelain) ]]; then
+    echo "${RED}THERE ARE CHANGES TO BE COMMITTED.${NC}"
+    exit 0
+fi
 
 set -e # Stop the script if any command fails
 
@@ -52,7 +52,7 @@ fi
 jq --arg NEXT_VERSION "$NEXT_VERSION" '.version = $NEXT_VERSION' package.json >tmp.json && mv tmp.json package.json
 
 git add .
-git commit -m "Releasing $TAG_NAME" >/dev/null
+git commit -m "Releasing $NEXT_VERSION" >/dev/null
 
 echo "SUCCESSFULLY RELEASE THE ${NEXT_VERSION} version tag"
 
