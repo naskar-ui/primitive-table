@@ -46,9 +46,6 @@ git push origin "${TAG_NAME}"
 
 cd ..
 rm -rf dist
-git add .
-git commit -m "Releasing $TAG_NAME" >/dev/null
-git push origin master
 
 echo "${BLUE}PACKING PACKAGE FOR ${RED}${TAG_NAME}${BLUE} IS SUCCESSFULLY FINISHED${NC}"
 

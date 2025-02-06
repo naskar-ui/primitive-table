@@ -50,6 +50,8 @@ fi
 
 ./scripts/pack-and-release.sh $ORIGIN $NEXT_VERSION
 jq --arg NEXT_VERSION "$NEXT_VERSION" '.version = $NEXT_VERSION' package.json >tmp.json && mv tmp.json package.json
+git add .
+git commit -m "Releasing $TAG_NAME" >/dev/null
 
 echo "SUCCESSFULLY RELEASE THE ${NEXT_VERSION} version tag"
 
