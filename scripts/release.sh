@@ -61,4 +61,8 @@ CURRENT_BRANCH=$(git branch | grep \* | cut -d ' ' -f2)
 echo "git push $ORIGIN $CURRENT_BRANCH"
 git push $ORIGIN $CURRENT_BRANCH >/dev/null
 
+npm publish
+
+rm -rf dist
+
 exit 0

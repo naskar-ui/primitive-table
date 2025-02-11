@@ -45,7 +45,6 @@ git tag "${TAG_NAME}"
 git push origin "${TAG_NAME}"
 
 cd ..
-rm -rf dist
 
 echo "${BLUE}PACKING PACKAGE FOR ${RED}${TAG_NAME}${BLUE} IS SUCCESSFULLY FINISHED${NC}"
 
