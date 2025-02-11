@@ -1,10 +1,28 @@
 # Primitive Table
 
+![sample table](images/sample-table.png)
+
 This is a simple package for react table.
 
-Ex usage:
+### Installation
+
+- NPM
 
 ```
+npm i primitive-table
+```
+
+- yarn
+
+```
+yarn add primitive-table
+```
+
+### Ex usage:
+
+```
+import { InitRecordType, Table, TableColumn } from "primitive-table";
+
 interface RecordType extends InitRecordType {
   name: string;
   age: number;
