@@ -29,15 +29,15 @@ export const Table = <RecordType extends InitRecordType>(
           tableId={tableId}
           isFetching={isFetching}
         />
-
-        <Pagination
-          total={dataSource.length}
-          currentPage={currentPage}
-          onChangeCurrentPage={setCurrentPage}
-          pageSize={pageSize}
-          onChangePageSize={setPageSize}
-        />
       </table>
+
+      <Pagination
+        total={dataSource.length}
+        currentPage={currentPage}
+        onChangeCurrentPage={setCurrentPage}
+        pageSize={pageSize}
+        onChangePageSize={setPageSize}
+      />
     </div>
   );
 };
