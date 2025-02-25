@@ -13,6 +13,8 @@ export interface CoreTable {
   tableId: string;
   /** define the fetching status */
   isFetching?: boolean;
+  /** table class names */
+  className?: string;
 }
 
 /** Table Column */
