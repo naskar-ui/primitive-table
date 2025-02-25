@@ -15,7 +15,9 @@ export default {
   },
   plugins: [
     peerDepsExternal(),
-    resolve(),
+    resolve({
+      skip: ["react", "react-dom"],
+    }),
     commonjs(),
     typescript({
       tsconfig: "./tsconfig.json",
